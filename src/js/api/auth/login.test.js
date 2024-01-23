@@ -17,7 +17,6 @@ describe("Login Function", () => {
     });
 
     await login(email, password);
-    // Assert that fetch was called with the correct arguments
     expect(global.fetch).toHaveBeenCalledWith(`${apiPath}/social/auth/login`, {
       method: "post",
       body: JSON.stringify({ email, password }),
