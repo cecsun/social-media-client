@@ -1,7 +1,5 @@
 describe("Login", () => {
   it("logs in with valid credentials", () => {
-    // const username = "cecsun";
-
     cy.visit("/");
     cy.wait(1000);
     cy.get('form[id="registerForm"').within(() => {
@@ -38,7 +36,6 @@ describe("Login", () => {
       cy.get('button[type="submit"]').click();
     });
     cy.on("window:alert", (t) => {
-      //assertions
       expect(t).to.equal(
         "Either your username was not found or your password is incorrect",
       );
