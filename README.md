@@ -11,3 +11,5 @@ In this assignment I was tasked with improving the quality of an existing applic
 - **Cypress**: e2e testing framework that runs in the browser.
 
 ## Workflow Status Badge
+
+[![Automated Unit Testing](https://github.com/cecsun/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/cecsun/social-media-client/actions/workflows/unit-test.yml)
